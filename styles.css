@@ -1,11 +1,19 @@
 .wrapper {
   display: flex;
   justify-content: space-around;
-  height: 200vh;
+  height: 80vh;
 }
 
 .box {
   width: 200px;
   height: 200px;
   background: peru;
+}
+
+.box:nth-child(2) {
+  align-self: center;
+}
+
+.box:nth-child(3) {
+  align-self: flex-end;
 }
