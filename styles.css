@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  height: 200vh;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: peru;
+}
