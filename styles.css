@@ -8,12 +8,10 @@
   width: 200px;
   height: 200px;
   background: peru;
+  font-size: 50px;
+  color: white;
 }
 
 .box:nth-child(2) {
-  align-self: center;
-}
-
-.box:nth-child(3) {
-  align-self: flex-end;
+  order: -1;
 }
