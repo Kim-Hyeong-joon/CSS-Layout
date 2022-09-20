@@ -1,19 +1,16 @@
 .wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 100px 50px 300px;
+  column-gap: 10px;
+  row-gap: 10px;
 }
 
 .box {
-  flex-basis: 30%;
   background: peru;
   font-size: 50px;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.box:nth-child(4) {
-  margin-top: 10px;
 }
