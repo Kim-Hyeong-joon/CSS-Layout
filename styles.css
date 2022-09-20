@@ -1,16 +1,30 @@
-.wrapper {
+.grid {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 100px 50px 300px;
-  column-gap: 10px;
-  row-gap: 10px;
+  grid-template-columns: auto 200px;
+  grid-template-rows: 100px repeat(2, 200px) 100px;
+  grid-template-areas:
+    "header header header header"
+    "content content content nav"
+    "content content content nav"
+    "footer footer footer footer";
 }
 
-.box {
-  background: peru;
-  font-size: 50px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header {
+  grid-area: header;
+  background-color: aqua;
+}
+
+.content {
+  grid-area: content;
+  background-color: aquamarine;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: bisque;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: blanchedalmond;
 }
